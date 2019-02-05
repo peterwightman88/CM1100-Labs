@@ -1,0 +1,109 @@
+LAB 1
+Q.1
+alert ("Computing is great");
+alert ("Alice says \"Bob is here \"");
+alert ("The folder to use is c\:\\home\\files");
+alert ("RGU's new campus");
+
+Q.2
+alert ("X\nXX\nXXX\nXXXX\nXXXXX");
+
+Q.3
+alert ("XXX\nX\tX\nX\tX\nX\tX\nXXX");
+
+Q.5
+var input = prompt("What is your name please?");
+alert ("Hello " + input + "\n Welcome to CM1100 \n We hope you enjoy the course");
+
+Q.6
+var input = parseInt(prompt("Enter a number please"));
+alert (input + 1);
+
+Q.7
+var person1 = prompt ("What is the first persons name?");
+var person2 = prompt ("What is the second persons name?");
+alert (person1 + " and " + person2 + " both enjoy computing!");
+
+
+
+
+LAB 2
+Q.1
+var num = 2;
+alert ("num - " + num);
+alert ("num + 1 = " + (num + 1));
+num  = num + 1;
+alert (num);
+
+Q.2
+var name = prompt("What is your name?");
+
+alert ("Hello " + name + ", \nYour name contains "+ name.length + " letters " + 
+"\nIt begins with " + name.charAt(0) + " and ends with " + name.charAt(2));
+
+
+Q.3
+var num2 = 67E120;
+alert (Math.pow(num2,2));
+alert (Math.pow(num2,3));
+
+Q.4
+alert (Math.ceil(Math.random() * 6));
+
+Q.7
+var a = parseInt(prompt("Pick a number"));
+var b = parseInt(prompt("Pick another number"));
+alert("a + b = " + parseInt(a + b));
+alert("a - b = " + parseInt(a - b));
+alert("a * b = " + parseInt(a * b));
+alert("a / b = " + parseInt(a / b));
+alert("a % b = " + parseInt(a % b));
+
+Q.9
+var tempC = parseFloat(prompt("Give the temperature in Celsius"));
+var tempF = 1.8 * tempC + 32.0;
+alert (tempC + " Celsius = " + tempF + " Fahrenheit");
+
+Q.10
+var num  = parseInt(prompt("Please enter a number"));
+var num2 = parseInt(prompt("Please enter another number"));
+alert(num2 + " goes into " + num + ", " + parseInt(num/num2) +
+" times, with remainder " + num%num2);
+
+
+LAB 3
+Q.1
+var input = prompt("Please enter the password");
+var password = "Sunderland";
+
+if (password !== input){
+    alert ("Password incorrect, please try again");
+}
+   else{
+   alert ("Password correct");
+}
+
+Q.2
+var mark = parseInt(prompt("Please enter your mark"));
+
+if (mark >= 120){
+   alert ("Your mark of " + mark + " is good!");
+}
+else if (mark >= 80){
+   alert ("Your mark of " + mark + " is average!");
+}
+else{
+ alert ("Your mark of " + mark + " is poor");
+}
+
+Q.3
+var input = parseInt(prompt("Enter a number please"));
+
+if (input % 2 === 0){
+   alert (input + " is an even number");
+}
+else{
+   alert (input + " is an odd number");
+}
+
+Q.4
