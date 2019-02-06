@@ -1,0 +1,281 @@
+LAB 1
+Q.1
+alert ("Computing is great");
+alert ("Alice says \"Bob is here \"");
+alert ("The folder to use is c\:\\home\\files");
+alert ("RGU's new campus");
+
+Q.2
+alert ("X\nXX\nXXX\nXXXX\nXXXXX");
+
+Q.3
+alert ("XXX\nX\tX\nX\tX\nX\tX\nXXX");
+
+Q.5
+var input = prompt("What is your name please?");
+alert ("Hello " + input + "\n Welcome to CM1100 \n We hope you enjoy the course");
+
+Q.6
+var input = parseInt(prompt("Enter a number please"));
+alert (input + 1);
+
+Q.7
+var person1 = prompt ("What is the first persons name?");
+var person2 = prompt ("What is the second persons name?");
+alert (person1 + " and " + person2 + " both enjoy computing!");
+
+
+
+
+LAB 2
+Q.1
+var num = 2;
+alert ("num - " + num);
+alert ("num + 1 = " + (num + 1));
+num  = num + 1;
+alert (num);
+
+Q.2
+var name = prompt("What is your name?");
+
+alert ("Hello " + name + ", \nYour name contains "+ name.length + " letters " + 
+"\nIt begins with " + name.charAt(0) + " and ends with " + name.charAt(2));
+
+
+Q.3
+var num2 = 67E120;
+alert (Math.pow(num2,2));
+alert (Math.pow(num2,3));
+
+Q.4
+alert (Math.ceil(Math.random() * 6));
+
+Q.7
+var a = parseInt(prompt("Pick a number"));
+var b = parseInt(prompt("Pick another number"));
+alert("a + b = " + parseInt(a + b));
+alert("a - b = " + parseInt(a - b));
+alert("a * b = " + parseInt(a * b));
+alert("a / b = " + parseInt(a / b));
+alert("a % b = " + parseInt(a % b));
+
+Q.9
+var tempC = parseFloat(prompt("Give the temperature in Celsius"));
+var tempF = 1.8 * tempC + 32.0;
+alert (tempC + " Celsius = " + tempF + " Fahrenheit");
+
+Q.10
+var num  = parseInt(prompt("Please enter a number"));
+var num2 = parseInt(prompt("Please enter another number"));
+alert(num2 + " goes into " + num + ", " + parseInt(num/num2) +
+" times, with remainder " + num%num2);
+
+
+LAB 3
+Q.1
+var input = prompt("Please enter the password");
+var password = "Sunderland";
+
+if (password !== input){
+    alert ("Password incorrect, please try again");
+}
+   else{
+   alert ("Password correct");
+}
+
+Q.2
+var mark = parseInt(prompt("Please enter your mark"));
+
+if (mark >= 120){
+   alert ("Your mark of " + mark + " is good!");
+}
+else if (mark >= 80){
+   alert ("Your mark of " + mark + " is average!");
+}
+else{
+ alert ("Your mark of " + mark + " is poor");
+}
+
+Q.3
+var input = parseInt(prompt("Enter a number please"));
+
+if (input % 2 === 0){
+   alert (input + " is an even number");
+}
+else{
+   alert (input + " is an odd number");
+}
+
+Q.4
+var age = parseInt(prompt("What is your age?"));
+
+if (age < 0 || age > 120){
+   alert ("You have entered an incorrect age, please try again");
+}
+else if (age >= 65){
+   alert ("Your age category is senior");
+}
+else if (age >= 21){
+   alert ("Your age category is adult");
+}
+else if (age >= 16){
+   alert ("Your age group is juvenile");
+}
+else if (age >= 5){
+   alert ("Your age group is child");
+}
+else {
+   alert("Your age group is infant");
+}
+
+Q.5
+var die = Math.random();
+
+if (die > (5.0 / 6.0)){
+  alert(6);
+}
+else if (die > (2.0 / 3.0)){
+   alert(5);
+}
+else if (die > 0.5){
+   alert(4);
+}
+else if (die > (1.0 / 3.0)){
+   alert(3);
+}
+else if (die > (1.0 / 6.0)){
+   alert(2);
+}
+else {
+   alert(1);
+}
+
+Q.7
+var name = prompt("What is your name?");
+var char1 = name.toUpperCase().charAt(0);
+
+if (char1 >= 'A' && char1 <= 'K'){
+   alert(name + " Go to room 101");
+}
+else if (char1 >= 'L' && char1 <= 'P'){
+   alert(name + " Go to room 102");
+}
+else if (char1 >= 'R' && char1 <= 'Z'){
+   alert(name + " Go to room 103");
+}
+else {
+   alert(name + " Incorrect name, please try again");
+}
+
+
+
+Lab4
+Q.1
+
+var input = prompt("Please enter the password");
+var password = "password";
+
+(input === password) ? alert ("Password correct") : alert ("Password incorrect");
+
+Q.2
+var toss = Math.random();
+
+toss > 0.5 ? alert("Heads") : alert("Tails");
+
+
+Q.3
+var input = confirm("Did you attend the lecture?");
+
+input === true ? alert ("You attended the lecture") : alert ("You didn't attend the lecture");
+
+Q.4
+var year = parseInt(prompt("What year were you born?"));
+
+switch (year % 12){
+   case 0: alert (year + " year of the monkey");
+   break;
+   case 1: alert (year + " year of the rooster");
+   break;
+   case 2: alert (year + " year of the dog");
+   break;
+   case 3: alert (year + " year of the pig");
+   break;
+   case 4: alert (year + " year of the rat");
+   break;
+   case 5: alert (year + " year of the ox");
+   break;
+   case 6: alert (year + " year of the tiger");
+   break;
+   case 7: alert (year + " year of the rabbit");
+   break;
+   case 8: alert (year + " year of the dragon");
+   break;
+   case 9: alert (year + " year of the snake");
+   break;
+   case 10: alert (year + " year of the horse");
+   break;
+   case 11: alert (year + " year of the sheep");
+   break;
+}
+
+Q.5)
+var grade = prompt("Enter your grade please");
+var grade1 = grade.toUpperCase();
+
+switch (grade1) {
+
+       case "A": alert("Excellent");
+       break;
+       case "B": alert("Very good");
+       break;
+       case "C": alert("Good");
+       break;
+       case "D": alert("Pass");
+       break;
+       case "E": alert("Almost a pass");
+       break;
+       case "F": alert("Fail");
+       break;
+       default: alert("Invalid grade entered")
+}
+
+Q.6)
+
+var input = prompt ("Enter the first three letters of the month");
+var days = input.toUpperCase();
+
+
+switch (days){
+
+   case "FEB": alert ("28 days");
+   break;
+
+   case "APR":
+   case "JUN":
+   case "SEP":
+   case "NOV": alert("30 days");
+   break;
+
+   case "JAN":
+   case "MAR":
+   case "MAY":
+   case "JUL":
+   case "AUG":
+   case "OCT":
+   case "DEC": alert("31 days");
+   break;
+
+   default: alert ("Month not recognised")
+}
+
+Q.7
+
+switch (days.slice(0,3))
+
+Q.8
+
+   case "FEB": var leapYear = confirm ("Is it a leap year?");
+               alert (days + " has " + (leapYear? 29 : 28) + " days");
+               break;
+               
+               
