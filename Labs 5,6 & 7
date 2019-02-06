@@ -1,0 +1,110 @@
+Lab 5
+
+Q.1
+var input = parseInt(prompt("How many stars would you like?"));
+var count = 0;
+var output = "";
+
+while (count <  input) {
+       output += "*";
+       count ++;
+}
+alert (output);
+
+Q.2
+var input = parseInt(prompt("What number would you like to count down from?"));
+var count = 0;
+
+while (count <  input) {
+       alert (input)
+       input --;
+}
+
+Q.3
+var input = parseInt(prompt("How many values would you like to enter?"));
+var count = 0;
+var sum = 0;
+
+while (count < input){
+      sum += parseInt(prompt("What is the next value?"));
+      count ++;
+}
+
+alert ("The average was " + (sum / input));
+
+Q.4
+var headCount = 0;
+var count = 0;
+var side;
+
+while (headCount < 5){
+
+      Math.random() < 0.5 ? side = "Heads" : side = "Tails"
+      alert (side);
+
+      if (side === "Heads"){
+         headCount ++;
+      }
+      count ++;
+}
+alert ("It took " + count + " tosses to get to 5 heads");
+
+
+Q.5
+var input = prompt("Please enter some text");
+var output = "";
+var count = input.length;
+
+while (count >= 0){
+      count --;
+      output += input.charAt(count);
+}
+
+alert ("Your text reversed is " + output);
+
+Q.6
+var text = "Enter your choice \n Input 1 for Rock, 2 for paper, 3 for Scissors ";
+var compWins = 0;
+var userWins = 0;
+var userChoice;
+var compChoice;
+var winner;
+var output = "";
+
+while (compWins < 3 && userWins < 3) {
+       
+       compChoice = Math.ceil(Math.random() * 3);
+       userChoice = parseInt(prompt(text));
+
+       if (compChoice === 1 && userChoice == 2) {
+              userWins ++; winner = "User";
+}
+       else if (compChoice === 2 && userChoice == 3) {
+              userWins ++; winner = "User";
+}
+       else if (compChoice === 3 && userChoice == 1) {
+              userWins ++; winner = "User";
+}
+       else if (compChoice ===  userChoice) {
+              userWins ++; winner = "draw";
+}
+       else {
+              compWins ++; winner = "Comp";
+}
+
+output = "User choice: " + userChoice;
+output += ", Computer choice : " + compChoice;
+output += "\nThe winner was " + winner;
+output += "\nCurrent score - \nComputer: " + compWins;
+output += "\nUser : " + userWins;
+
+alert (output);
+
+}
+
+alert ("The winner was: " + winner);
+
+
+Lab 6
+
+
