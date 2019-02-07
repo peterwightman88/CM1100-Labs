@@ -107,4 +107,147 @@ alert ("The winner was: " + winner);
 
 Lab 6
 
+Q.1
+var mark = parseInt(prompt("Please enter the mark you achieved"));
 
+while (mark < 0 || mark > 100)
+{
+      alert ("Incorrect mark entered, please try again!");
+}
+if (mark >= 40){
+   alert ("You have passed the test!");
+}
+else
+{
+  alert ("You have failed the test!");
+}
+
+Q.2
+var input = parseInt(prompt("Please enter an integer from 1 to 12"));
+var output = "";
+
+for (var count = 1; count < 13; count ++){
+     output += count + " times " + input + " is " + (input * count) + "\n";
+}
+alert ("The times " + input + " Multiplication table: \n\n" + output);
+
+Q.3
+var input = parseInt(prompt("Choose a number to be the sum of its values"));
+var sum = 0;
+
+for (var count = 1; count <= input; count ++){
+     sum += count;
+}
+
+alert (sum);
+
+Q.4
+var menu = "";
+var americanoCount = 0;
+var espressoCount = 0;
+var latteCount = 0;
+var cappuccinoCount = 0;
+choice = 0;
+
+menu = "Please chose one of the following options:\n";
+menu += " [1] Americano \n";
+menu += " [2] Espresso \n";
+menu += " [3] Latte \n";
+menu += " [4] Cappuccino \n";
+menu += " [5] Display Total Number of Drinks Sold \n";
+
+do {
+    choice = parseInt(prompt(menu));
+    while ((choice <1) || (choice > 5)){
+            choice = parseInt(prompt("Invalid choice. \n" + menu));
+     }
+
+
+switch (choice) {
+    case 1: alert("You have chosen an Americano");
+            americanoCount++;
+    break;
+    case 2: alert("You have chosen an Espresso");
+            espressoCount++;
+    break;
+    case 3: alert("You have chosen a Latte");
+            latteCount++;
+    break;
+    case 4: alert("You have chosen a Cappuccino");
+            cappuccinoCount++;
+    break;
+}
+} 
+while (choice !== 5);
+    
+
+var output = "There have been " + americanoCount + " Americanos, ";
+output     += espressoCount + " Espressos, " ;
+output     += latteCount + " Lattes, and " ;
+output     += cappuccinoCount + " Cappuccinos sold.\n Goodbye. " ;
+alert(output); 
+
+Q.5
+var input = parseInt(prompt("Please enter a positive number"));
+var output = "Factors of " + input + " are: \n";
+
+for (var i = 1; i <= input; i++){
+     if (input % i === 0){
+         output += i + "\n";
+    }
+}
+
+alert (output);
+
+
+Q.6
+var input = parseInt(prompt("Please enter a positive number"));
+var prime = true;
+
+for (var i = 1; i <= input; i++){
+     if (input % i === 0){
+         prime = false;
+    }
+}
+
+alert (input + (prime? " is" : " is not") + " prime");
+
+
+Q.7
+var target = Math.floor(Math.random()*100) + 1;
+var MAX_TRIES = 6;
+var tries = 0;
+
+do{
+   var input = parseInt( prompt("Enter an integer from 1 to 100." +
+                         "\nEnter 999 to quit.") ); //Get input
+   if (input === 999){
+       break;                                                                //Quit if sentinel value is entered
+ } else if ((input > 100)||(input < 1) ){
+                                                                             //Check that number is in range
+   alert ("Your number was out of range." +
+          " Enter an integer from 1 to 100." +
+          "\nEnter 999 to quit.");
+
+ } else if (input > target){
+                                                                             //Guess too high
+  alert("Attempt number " + (tries + 1) + ": Too HI!");
+
+ } else if (input < target){
+                                                                            //Guess too low
+  alert("Attempt number " + (tries + 1) + ": Too LO!");
+
+ } else if (input === target){
+  alert("Attempt number " +(tries + 1) + ": Got it!");
+
+ } else { 
+  alert("You didn't input a number");
+ }                                                                          //End the if-else loops
+tries++;
+ }
+
+while(tries < MAX_TRIES && input !== target);
+ 
+ 
+Lab 8
+Q.1
