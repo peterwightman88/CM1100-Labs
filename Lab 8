@@ -1,0 +1,122 @@
+Lab 8
+
+Q.1
+a.)
+var input = prompt("Please enter a word");
+var output = "";
+
+for (var count = 0; count < input.length; count ++){
+    output += input.charAt(count) + "\n";
+}
+
+alert (output);
+
+b.)
+var input = prompt("Please enter a word");
+var output = "";
+
+for (var count = 0; count < input.length; count ++){
+    output += input.charAt(input.length - 1 - count) + "\n";
+}
+
+alert (output);
+
+c.)
+var input = prompt("Please enter a word");
+var total = 0;
+
+for (var count = 0; count < input.length; count ++){
+     var letter = input.charAt(count);
+     if (letter === 'a' || letter === 'e' ||  letter === 'i' ||
+          letter === '0' || letter === 'u' )
+     total ++;
+ }
+
+
+alert (total);
+
+
+d.)
+var input = prompt("Please enter a word");
+var total = 0;
+
+for (var count = 0; count < input.length; count ++){
+     var letter = input.charAt(count);
+     letter = letter.toLowerCase();
+
+     if (letter === 'a' || letter === 'e' ||  letter === 'i' ||
+          letter === '0' || letter === 'u' ){
+     total ++;
+ }
+}
+alert (total);
+
+e.)
+var input = prompt("Please enter a word");
+var output = "";
+
+for (var count = 0; count < input.length; count ++){
+     var letter = input.charAt(count);
+     letter = letter.toLowerCase();
+
+     if (!(letter === 'a' || letter === 'e' ||  letter === 'i' ||
+          letter === '0' || letter === 'u' )){
+
+    output += letter
+ }
+}
+
+alert (output);
+
+
+f.)
+
+var input = prompt("Please enter a word");
+var output = "";
+
+for (var count = 0; count < input.length; count ++){
+     var letter = input.charAt(count);
+     letter = letter.toLowerCase();
+
+     if (!(letter === 'a' || letter === 'e' ||  letter === 'i' ||
+          letter === '0' || letter === 'u' )){
+
+    output += letter
+ }
+     else{
+        output += "*";
+ }
+}
+
+alert (output);
+
+
+Q.2
+var input = prompt ("Please input a single word");
+var output = "";
+
+for (var i = 1; i < input.length; i++){
+     output += input.charAt(i);
+}
+output +=input.charAt(0) + "ay";
+
+alert (output);
+
+b.)
+var input = prompt ("Please input a single word").toLowerCase();
+var output = "";
+
+for (var i = 0; i < input.length; i++){
+     var letter = input.charAt(i);
+
+     if (!(letter === 'a') || (letter === 'e') || (letter === 'i') ||
+          (letter === 'o') || (letter === 'u')){
+           output += letter + "op";
+
+    } else {
+          output += letter;
+    } 
+}
+
+
+alert (output);
