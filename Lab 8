@@ -120,3 +120,27 @@ for (var i = 0; i < input.length; i++){
 
 
 alert (output);
+
+
+Q.3
+var input = prompt("Please type a quick sentence");
+var output = "";
+var output2 = "";
+
+
+for (var i = (input.length) - 1; i >+ 0; i--) {
+    if (input.charAt(i) !== " "){
+        output += input.charAt(i);
+    }
+}
+
+for (var i = 0; i < output.length; i++) {
+     if (i & 2 === 0) {
+        output2 += output.charAt(i).toUpperCase();
+
+   } else {
+         output2 += output.charAt(i).toLowerCase();
+   }
+}
+
+alert (output2);
