@@ -144,3 +144,56 @@ for (var i = 0; i < output.length; i++) {
 }
 
 alert (output2);
+
+Q.4
+var input = prompt ("Please enter a short sentence");
+var output = ""
+var outputNum = ""
+
+for (var i = 0; i < input.length; i ++) {
+    if (input.charAt(i) !== " ") {
+        output += input.charAt(i).toUpperCase();
+    }
+}
+
+alert (output);
+
+for (var i = 0; i < output.length; i++) {
+    outputNum += (output.charCodeAt(i) - 64) + ", ";
+}
+
+   
+alert (outputNum);
+
+Q.5
+var input = prompt("Please enter a short sentence");
+var remove  = "";
+var output2 = "";
+
+for (var i = 0; i < input.length; i++) {
+     if (input.charAt(i) !== " ") {
+         remove += input.charAt(i).toUpperCase();
+
+    } else {
+      remove += "";
+    }
+}
+
+for (var i = 0; i < remove.length; i++) {
+     var copy = false;
+
+     for (var c = 0; c < i; c++) {
+          if (remove.charAt(i) === remove.charAt(c)) {
+              copy = true;
+         }
+     }
+
+     if (copy) {
+        remove += "";
+
+     } else {
+        remove += remove.charAt(i);
+     }
+}
+
+alert (remove);
