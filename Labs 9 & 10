@@ -1,0 +1,119 @@
+Lab 9
+
+Q1
+var day = new Array(7);
+var output = "";
+
+day[0] = "Sunday".length;
+day[1] = "Monday".length;
+day[2] = "Tuesday".length;
+day[3] = "Wednesday".length;
+day[4] = "Thursday".length;
+day[5] = "Friday".length;
+day[6] = "Saturday".length;
+
+for (var i = 0; i < day.length; i++) {
+     output += day [i] + "\n";
+}
+
+alert (output);
+          
+
+Q2
+var myArray = [3,6,8,3,2,1,9];
+var newArray = new Array(2);
+
+newArray[0] = myArray[0];
+newArray[1] = myArray[myArray.length - 1];
+
+alert (newArray.toString());
+    
+    
+Q.3
+var myArray = [3,6,8,3,2,1,9];
+
+var first = myArray[0];
+var last = myArray[myArray.length - 1];
+
+myArray [0] = first;
+myArray[myArray.length - 1] = last;
+
+alert (myArray.toString());
+     
+     
+Q.4 (a & b)
+var months = [31,28,31,30,31,30,31,31,30,31,30,31];
+var output = "";
+
+for (var i = 0; i < months.length; i++) {
+     output += "Month " + (i + 1) + " has " + months[i] + " days. \n";
+    }
+
+alert (output);
+
+Q.4 (c)
+var months = [31,28,31,30,31,30,31,31,30,31,30,31];
+var output = "";
+
+for (var i = 0; i < months.length; i++) {
+     output += "Month " + (i + 1) + " has ";
+     output +=  months[i] + " days or ";
+     output +=  months[i]*24 + " hours or ";
+     output +=  months[i]*24*60 + " seconds or ";
+     output +=  months[i]*24*60 + " seconds.\n";
+    }
+
+alert (output);
+     
+     
+Q.5
+var temp = new Array (12);
+var max = temp [0];
+var min = temp [0];
+var sum = 0;
+var output = "";
+
+for (var i = 0; i < temp.length; i++){
+     temp [i] = parseFloat(prompt("Enter the temperature please"));
+}
+
+for (var i = 0; i < temp.length; i++){
+
+    if (max < temp [i]){
+        max = temp[i];
+    }
+
+    if (min > temp [i]){
+        min = temp[i];
+    }
+ 
+    sum += temp[i];
+}
+
+output += "The maximum temperature is " + max + " degrees.";
+output += "\nThe minimum temperature is " + min + " degrees.";
+output += "\nThe average temperature is " + (sum/temp.length) + " degrees.";
+
+alert(output);
+
+Q.6
+var mark = new Array (20);
+var passes = 0;
+var output = "";
+
+for (i = 0; i < mark.length; i++) {
+
+    mark[i] = parseInt(prompt("Please enter the mark achieved"));
+
+    if (mark[i] >39) {
+        passes ++;
+    }
+}
+
+output += "The number of students who passed the assessment is " + passes;
+
+alert (output);
+
+
+
+
